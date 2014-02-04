@@ -1,0 +1,105 @@
+/* Animation Mixin */
+/* Use - @include animationMixin(fadeIn, 1s, 1, normal, ease-out, forwards, 0)*/
+/* -- Setting up Reusable Animations -- */
+/* -- Fade In Animation -- */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+/* -- Slide Down Animation -- */
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translate(0, -500px);
+    -moz-transform: translate(0, -500px);
+    transform: translate(0, -500px); }
+
+  100% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+
+@-moz-keyframes slideDown {
+  0% {
+    -webkit-transform: translate(0, -500px);
+    -moz-transform: translate(0, -500px);
+    transform: translate(0, -500px); }
+
+  100% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+
+@-o-keyframes slideDown {
+  0% {
+    -webkit-transform: translate(0, -500px);
+    -moz-transform: translate(0, -500px);
+    transform: translate(0, -500px); }
+
+  100% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+
+@keyframes slideDown {
+  0% {
+    -webkit-transform: translate(0, -500px);
+    -moz-transform: translate(0, -500px);
+    transform: translate(0, -500px); }
+
+  100% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+
+body {
+  position: relative; }
+
+h1 {
+  background: red;
+  width: 150px;
+  position: absolute;
+  -webkit-animation-name: slideDown;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: normal;
+  -webkit-animation-direction: 1;
+  -webkit-animation-timing-function: forwards;
+  -webkit-animation-fill-mode: 0;
+  -webkit-animation-delay: 0;
+  -moz-animation-name: slideDown;
+  -moz-animation-duration: 1s;
+  -moz-animation-iteration-count: normal;
+  -moz-animation-direction: 1;
+  -moz-animation-timing-function: forwards;
+  -moz-animation-fill-mode: 0;
+  -moz-animation-delay: 0;
+  animation-name: slideDown;
+  animation-duration: 1s;
+  animation-iteration-count: normal;
+  animation-direction: 1;
+  animation-timing-function: forwards;
+  animation-fill-mode: 0;
+  animation-delay: 0; }
